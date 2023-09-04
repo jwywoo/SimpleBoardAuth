@@ -60,8 +60,9 @@ public class BoardService {
         if (userInfo.getSubject().equals(board.getUsername())) {
             boardRepository.delete(board);
             return new StringResponseDto("Success", "200");
+        } else {
+            throw new IllegalArgumentException("Invalid User Credentials");
         }
-        return null;
     }
 
     // Find board by id
