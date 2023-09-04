@@ -6,6 +6,7 @@ import com.example.simpleboardauth.board.dto.BoardResponseDto;
 import com.example.simpleboardauth.board.service.BoardService;
 import com.example.simpleboardauth.board.dto.StringResponseDto;
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
